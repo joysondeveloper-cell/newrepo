@@ -42,7 +42,7 @@ export class Home implements OnInit {
   
 
 
-    this.employees = [
+    this.employees = [  
     { id: 1, name: 'John' },
     { id: 2, name: 'David' },
     { id: 3, name: 'Sam' },
