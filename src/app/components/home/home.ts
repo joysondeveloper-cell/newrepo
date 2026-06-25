@@ -13,7 +13,7 @@ import {Employee} from '../../services/employee'
   imports: [Highligt,Highlightone,ValidatePipe,NgFor],
   templateUrl: './home.html',
   styleUrl: './home.css',
-})
+}) 
 export class Home implements OnInit {
   users:any
   errorMessage:any
