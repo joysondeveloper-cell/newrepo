@@ -1,0 +1,74 @@
+
+@if(loaderService.isLoading()) {
+
+  <div class="spinner">
+    Loading...
+  </div>
+
+}
+
+<p>Concept of error handling</p>
+
+method here : <button (click)="clickEvent()">click</button>
+
+<p>concept of lazy loading</p>
+<button (click)="goToHome()">dashboard</button>
+<br>
+
+<button>report</button>
+<br>
+<button>setting</button>  
+
+<p>concept of test cases - still pending</p> 
+
+<button (click)="Testevent()">test event</button>
+
+<p appHighligt>concept of custom directives</p>
+<p appHighlightone >one</p>
+-------------------------
+<p>role based authentication - using can Activate route</p>
+<button (click)="CanActivateRoute()">Button click</button>
+-----------------------------
+<p>concepts</p>
+<h1>{{1}}</h1>
+
+<!-- <button (click)="nextPagedata()">btns w</button> -->
+
+<p>concept of custome pipes</p>
+<p>pipe concept</p>
+<h1>{{ 2 | validate}}</h1>
+
+<p>concept of the pagination</p>
+
+<table >
+  <thead>  
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+</thead>
+<tbody> 
+  <tr *ngFor="let emp of paginatedEmployees">
+    <td>{{ emp.id }}</td>
+    <td>{{ emp.name }}</td>
+  </tr>
+   </tbody>
+</table>
+
+<br>
+
+<button (click)="previousPage()">Previous</button>
+
+<span> Page {{ currentPage }} </span>
+
+<button (click)="nextPage()">Next</button>
+
+
+
+<p >ldqklwdj<button  (click)="nextPage()"></button></p>
+<p>ldqklwdj</p>
+<p>ldqklwdj</p>
+<p>ldqklwdj</p>
+<p>ldqklwdj</p>
+<p>ldqklwdj</p>
+
