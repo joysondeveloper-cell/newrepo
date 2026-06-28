@@ -72,3 +72,16 @@ method here : <button (click)="clickEvent()">click</button>
 <p>ldqklwdj</p>
 <p>ldqklwdj</p>
 
+<p>table data</p>
+
+<table border="1">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+  </tr>
+
+  <tr *ngFor="let emp of employees">
+    <td>{{ emp.id }}</td>
+    <td>{{ emp.name }}</td>
+  </tr>
+</table>

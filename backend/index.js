@@ -6,7 +6,10 @@ const app = express();
 
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/admin");
+// mongoose.connect("mongodb://127.0.0.1:27017/admin");
+mongoose.connect(
+  "mongodb+srv://joyson130497_db_user:Ad2cdcswktr9L2Tw@cluster0.smf82qb.mongodb.net/user?retryWrites=true&w=majority&appName=Cluster0"
+);
 
 const EmployeeSchema = new mongoose.Schema({
   name: String,
@@ -27,6 +30,14 @@ app.get("/employees", async (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
+// app.listen(3000, () => {
+//   console.log("Server running on port 3000");
+// });
