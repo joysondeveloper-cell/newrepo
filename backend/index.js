@@ -8,7 +8,7 @@ app.use(cors());
 
 // mongoose.connect("mongodb://127.0.0.1:27017/admin");
 mongoose.connect(
-  "mongodb+srv://joyson130497_db_user:Ad2cdcswktr9L2Tw@cluster0.smf82qb.mongodb.net/user?retryWrites=true&w=majority&appName=Cluster0"
+  "mongodb+srv://joyson130497_db_user:HzzWVtxXQioV8vZX@cluster0.smf82qb.mongodb.net/user?retryWrites=true&w=majority&appName=Cluster0"
 );
 
 const EmployeeSchema = new mongoose.Schema({
