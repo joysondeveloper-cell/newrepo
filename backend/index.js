@@ -7,20 +7,17 @@ const app = express();
 app.use(cors());
 
 // mongoose.connect("mongodb://127.0.0.1:27017/admin");
-mongoose.connect(
+// mongoose.connect(
   // "mongodb+srv://joyson130497_db_user:HzzWVtxXQioV8vZX@cluster0.smf82qb.mongodb.net/user?retryWrites=true&w=majority&appName=Cluster0"
-  "mongodb+srv://joysondeveloper_db_user:qsVZhFGX8YzSF3r4@cluster0.jfpblfm.mongodb.net/?appName=Cluster0"
-);
-
-// mongodb+srv://joysondeveloper_db_user:qsVZhFGX8YzSF3r4@cluster0.jfpblfm.mongodb.net/user?retryWrites=true&w=majority&appName=Cluster0
+//   "mongodb+srv://joyson041997_db_user:HzzWVtxXQioV8vZX@cluster0.smf82qb.mongodb.net/user?appName=Cluster0"
+// );
 
 
 
-
-// mongoose
-//   .connect(process.env.MONGO_URI)
-//   .then(() => console.log("MongoDB Connected"))
-//   .catch((err) => console.error("MongoDB Error:", err));
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.error("MongoDB Error:", err));
 
 const EmployeeSchema = new mongoose.Schema({
   name: String,
